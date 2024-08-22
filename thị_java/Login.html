@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+
+    <!-- Latest compiled and minified CSS & JS -->
+    <link rel="stylesheet" media="screen" href="//netdna.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <script src="//code.jquery.com/jquery.js"></script>
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+
+    <script>
+        // Check xem User đã login chưa.Nếu đã login thì chuyển về trang admin
+        var accountLogin = JSON.parse(localStorage.getItem("accountLogin"));
+        if (accountLogin) {
+            window.open(".AdminPage.html", "_self");
+        }
+    </script>
+
+</head>
+
+<body>
+    <div class="container">
+        <br>
+        <br>
+        <div class="row">
+            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                <!-- <form action="" method="POST" role="form"> -->
+                <legend>Login</legend>
+
+                <div class="form-group">
+                    <label for="">Username</label>
+                    <input type="text" class="form-control" id="Username_Login_id" placeholder="Input field">
+                </div>
+
+                <div class="form-group">
+                    <label for="">Password</label>
+                    <input type="text" class="form-control" id="Password_Login_id" placeholder="Input field">
+                </div>
+
+                <button type="submit" class="btn btn-success" onclick="handleLogin()">Login</button>
+                <button type="submit" class="btn btn-primary" onclick="handleSort()">Reset</button>
+                <button type="submit" class="btn btn-primary" onclick="handleBackHome()">Back To HomePage</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+<script type="text/JavaScript" src="./Login.js"></script>
+
+</html>

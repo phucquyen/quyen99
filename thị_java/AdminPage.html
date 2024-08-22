@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Folwer Chu de</title>
+    <link rel="stylesheet" href="AdminPage.css" />
+    <!-- Import Bootstrap -->
+    <link rel="stylesheet" media="screen" href="//netdna.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" />
+    <script src="//code.jquery.com/jquery.js"></script>
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+
+    <!-- Latest compiled and minified CSS & JS -->
+    <link rel="stylesheet" media="screen" href="//netdna.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" />
+    <script src="//code.jquery.com/jquery.js"></script>
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+
+    <script>
+        // Check xem User đã login chưa.Nếu chưa thì chuyển về trang login
+        var accountLogin = JSON.parse(localStorage.getItem("accountLogin"));
+        if (!accountLogin) {
+            window.open("./Login.html", "_self");
+        }
+    </script>
+
+</head>
+
+<body>
+    <div class="container">
+        <!-- Menu -->
+        <div class="MenuSection">
+            <!--  -->
+        </div>
+        <!-- End Menu -->
+
+        <!-- Detail -->
+        <div class="DetailSection">
+            <div class="row">
+                <!-- SizeBar -->
+                <div class="SideBarSection">
+                    <!--  -->
+                </div>
+                <!--End SizeBar -->
+
+                <!-- Content -->
+                <div class="ProductAdminSection">
+                    <!--  -->
+                </div>
+                <!--End Content -->
+            </div>
+        </div>
+        <!--End Detail -->
+    </div>
+    <script type="text/javascript" src="./AdminPage.js"></script>
+</body>
+
+</html>
